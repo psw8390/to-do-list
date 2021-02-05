@@ -1,5 +1,4 @@
 const weather = document.querySelector(".js-weather");
-
 const API_KEY = "47e848c174fc22ba0697768feea1a614";
 const COORDS = "coords";
 
@@ -11,7 +10,7 @@ function getWeather(lat, lng) {
     }).then(function(json) {
         const temperature = json.main.temp;
         const place = json.name;
-        weather.innerText = `${temperature} @ ${place}`;
+        weather.innerText = `${temperature}℃ in ${place}`;
     });
 }
 

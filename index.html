@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Something</title>
+    <title>My to-do-list</title>
     <meta charset="utf-8" />
     <link rel=stylesheet href="index.css"/>
   </head>
   
   <body>
-      <div class="js-clock">
-        <h1>00:00</h1>
-      </div>
-      <span class="js-weather"></span>
-      <form class="js-form form">
-        <input type="text" placeholder="Type your name here" />
-      </form>
-      <h2 class="js-greetings greetings"></h2>
+    <nav class="header">
+        <span class="js-weather"></span>
+        <span class="js-clock">
+          <h1>00:00</h1>
+        </span>
+    </nav>
+    
+    <form class="js-form form">
+      <input type="text" placeholder="성함을 작성해주세요." />
+    </form>
+    <h2 class="js-greetings greetings"></h2>
       
-      <form class="js-toDoForm">
-        <input type="text" placeholder="Write a to do here" />
-      </form>
-      <ul class="js-toDoList">
-      </ul>
+    <form class="js-toDoForm">
+      <input type="text" placeholder="할일을 작성해주세요." />
+    </form>
+    <ul class="js-toDoList">
+    </ul>
     
     <script src="clock.js"></script>
     <script src="greeting.js"></script>

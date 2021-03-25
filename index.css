@@ -4,8 +4,12 @@ body {
   height: 100vh;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .js-clock {
-  font-size: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +20,10 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 20px;
+}
+
+.js-form {
+  margin-bottom: 20px;
 }
 
 .js-form input,
@@ -32,9 +40,27 @@ body {
   color: white;
 }
 
+.js-toDoForm {
+  display: flex;
+  justify-content: center;
+}
+
 .js-toDoForm input {
   width: 200px;
   height: 40px;
+}
+
+.js-toDoList {
+  display: flex;
+  padding-left: 45%;
+  flex-direction: column;
+}
+
+.js-toDoList li {
+  font-size: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .clicked {
@@ -47,7 +73,8 @@ body {
 }
 
 .showing {
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 
 @keyframes fadeIn {
